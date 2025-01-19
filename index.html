@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sylvie UNSABIRE | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        .interactive-section {
+            margin: 0;
+            background-color:rgba(10, 10, 31, 0.9);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+            padding: 50px 0;
+        }
+
+        .container-orbit {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+        .central-logo {
+            width: 140px;
+            height: 140px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+            margin: 0 auto;
+        }
+
+        .central-logo span {
+            font-size: 56px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .icon-orbit {
+            position: absolute;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            width: 600px;
+            height: 600px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: rotate 20s linear infinite;
+        }
+
+        .icon {
+            width: 80px;
+            height: 80px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        .icon:hover {
+            transform: scale(1.2);
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .icon img {
+            width: 50px;
+            height: 50px;
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: translate(-50%, -50%) rotate(0deg);
+            }
+            100% {
+                transform: translate(-50%, -50%) rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">Sylvie UNSABIRE</div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#skills">Skills</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content animated">
+            <h1>"First, solve the problem.<br>Then, write the code."</h1>
+            <p>I'm a Software Engineer passionate about creating innovative solutions.</p>
+        </div>
+    </section>
+
+    <section id="skills" class="interactive-section">
+        <div class="container-orbit">
+            <div class="central-logo">
+                <span>&lt;/&gt;</span>
+            </div>
+
+            <div class="icon-orbit">
+                <div class="icon">
+                    <img src="images/html-5.png" alt="html" width="512" height="512">                </div>
+                <div class="icon">
+                    <img src="images/919851.png" alt="Next.js" width="512" height="512">                </div>
+                <div class="icon">
+                    <img src="images/919825.png" alt="Node.js" width="512" height="512">                </div>
+                <div class="icon">
+                    <img src="images/icons8-html-logo-144.png" alt="JavaScript" width="144" height="144">                </div>
+                <div class="icon">
+                    <img src="images/Group-56812-1.png" alt="CSS" width="552" height="550">                </div>
+                <div class="icon">
+                    <img src="images/css.png" alt="Adobe AI" width="512" height="512">                </div>
+                <div class="icon">
+                    <img src="images/php.png" alt="MongoDB" width="512" height="512">                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2>Work Experience</h2>
+            <div class="experience-card animated">
+                <h3>Senior Software Engineer</h3>
+                <p>Developed and maintained complex web applications using modern technologies. Led team projects and mentored junior developers.</p>
+            </div>
+            <div class="experience-card animated">
+                <h3>Full Stack Developer</h3>
+                <p>Built responsive web applications and RESTful APIs. Collaborated with cross-functional teams to deliver high-quality solutions.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <div class="project-grid">
+                <div class="project-card animated">
+                    <div class="project-image"></div>
+                    <h3>Project One</h3>
+                    <p>A sophisticated web application built with modern technologies.</p>
+                </div>
+                <div class="project-card animated">
+                    <div class="project-image"></div>
+                    <h3>Project Two</h3>
+                    <p>An innovative mobile-first solution for modern problems.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <center><h2>Get In Touch</h2></center>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <center><button type="submit">Send Message</button></center>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://github.com/your-github-username" target="_blank" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/your-linkedin-profile" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+           <a href="mailto:your-email@gmail.com" target="_blank" aria-label="Gmail">
+    <i class="fab fa-google"></i>
+            </a>
+        </div>
+        <p>&copy; 2025 Sylvie UNSABIRE. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
